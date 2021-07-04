@@ -2,7 +2,7 @@
 using System.Net.Http;
 using System.Threading.Tasks;
 
-namespace Disbot.Services
+namespace Dovebot.Services
 {
     public class PictureService
     {

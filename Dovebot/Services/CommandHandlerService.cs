@@ -6,7 +6,7 @@ using Discord.Commands;
 using Discord.WebSocket;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace Disbot.Services
+namespace Dovebot.Services
 {
     public class CommandHandlerService
     {

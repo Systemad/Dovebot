@@ -25,4 +25,8 @@
       <Folder Include="Modules\Admin" />
     </ItemGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\..\HLTVnet\HLTVnet\HLTVnet.csproj" />
+    </ItemGroup>
+
 </Project>

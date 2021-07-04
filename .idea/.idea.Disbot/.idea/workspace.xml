@@ -4,7 +4,18 @@
     <projectFile>Disbot/Disbot.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ebee4429-6e36-4241-ae3e-eb6ab9cab779" name="Default Changelist" comment="" />
+    <list default="true" id="ebee4429-6e36-4241-ae3e-eb6ab9cab779" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Dovebot/Modules/General/ChannelHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Disbot/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Disbot/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Disbot.sln" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Disbot/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/Dovebot/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Disbot/Disbot.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Dovebot/Dovebot.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Disbot/Modules/InfoModule.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Dovebot/Modules/InfoModule.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Disbot/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Dovebot/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Disbot/Services/AppSettings.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Dovebot/Services/AppSettings.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Disbot/Services/CommandHandlerService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Dovebot/Services/CommandHandlerService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Disbot/Services/PictureService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Dovebot/Services/PictureService.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,7 +25,13 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Dovebot/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Dovebot/Services/CommandHandlerService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Dovebot/Services/PictureService.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2E9BEEB1-8083-4F4B-9ABE-A5F3DB1BC8BD/cf/d3ec1e3e/ExceptionDispatchInfo.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Dovebot/Modules/InfoModule.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Dovebot/Services/AppSettings.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Dovebot/Modules/General/ChannelHandler.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
@@ -26,10 +43,12 @@
       <option value="$PROJECT_DIR$/Disbot/Services/Initialize.cs" />
       <option value="$PROJECT_DIR$/Disbot/Services/AppSettings.cs" />
       <option value="$PROJECT_DIR$/Disbot/Services/PictureService.cs" />
-      <option value="$PROJECT_DIR$/Disbot/Modules/InfoModule.cs" />
       <option value="$PROJECT_DIR$/Disbot/Program.cs" />
-      <option value="$PROJECT_DIR$/Disbot/appsettings.json" />
       <option value="$PROJECT_DIR$/Disbot/.gitignore" />
+      <option value="$PROJECT_DIR$/Disbot/appsettings.json" />
+      <option value="$PROJECT_DIR$/Disbot/Modules/InfoModule.cs" />
+      <option value="$PROJECT_DIR$/Disbot/Modules/General/ChannelHandler.cs" />
+      <option value="$PROJECT_DIR$/Dovebot/Modules/General/ChannelHandler.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1uLcUq5v2cXqdx4bCk6nDI9kvMr" />
@@ -55,7 +74,7 @@
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <option name="USE_MONO" value="0" />
       <option name="RUNTIME_ARGUMENTS" value="" />
-      <option name="PROJECT_PATH" value="$PROJECT_DIR$/Disbot/Disbot.csproj" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/Dovebot/Dovebot.csproj" />
       <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
       <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
       <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
@@ -80,7 +99,18 @@
       <workItem from="1624647855998" duration="8856000" />
       <workItem from="1624745535395" duration="386000" />
       <workItem from="1624745994664" duration="127000" />
+      <workItem from="1624746165645" duration="3092000" />
+      <workItem from="1624829955416" duration="3322000" />
+      <workItem from="1625423109799" duration="15000" />
     </task>
+    <task id="LOCAL-00001" summary="Initial commit">
+      <created>1624746299494</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1624746299494</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -100,5 +130,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="Initial commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
   </component>
 </project>

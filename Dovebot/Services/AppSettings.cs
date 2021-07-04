@@ -1,7 +1,7 @@
 ﻿using System.IO;
 using Microsoft.Extensions.Configuration;
 
-namespace Disbot.Services
+namespace Dovebot.Services
 {
     static class ConfigurationManager
     {

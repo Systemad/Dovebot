@@ -1,10 +1,10 @@
 ﻿using System.IO;
 using System.Threading.Tasks;
-using Disbot.Services;
 using Discord;
 using Discord.Commands;
+using Dovebot.Services;
 
-namespace Disbot.Modules
+namespace Dovebot.Modules
 {
     public class InfoModule : ModuleBase<SocketCommandContext>
     {
@@ -29,10 +29,13 @@ namespace Disbot.Modules
         [Command("userinfo")]
         public async Task UserInfoAsync(IUser user = null)
         {
-            user = user ?? Context.User;
+            user ??= Context.User;
 
-            await ReplyAsync(user.ToString());
+            await ReplyAsync($"Username: {user}");
         }
-        
+
+        // Echo a text
+        [Command("echo")]
+        public Task Echo(string echo) => ReplyAsync('\u200B' + echo);
     }
 }
