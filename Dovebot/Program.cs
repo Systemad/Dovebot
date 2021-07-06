@@ -43,6 +43,7 @@ namespace Dovebot
                 .AddSingleton<CommandHandlerService>()
                 .AddSingleton<HttpClient>()
                 .AddSingleton<PictureService>()
+                .AddSingleton<UpcomingmatchService>()
                 .BuildServiceProvider();
         }
         

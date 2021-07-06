@@ -8,7 +8,7 @@ namespace Dovebot.Modules
 {
     public class InfoModule : ModuleBase<SocketCommandContext>
     {
-        public PictureService PictureService { get; set; }
+        private PictureService PictureService { get; set; }
 
         [Command("hello")]
         [Summary("Echoes text")]
