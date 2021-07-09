@@ -6,7 +6,11 @@ using Discord;
 using Discord.Commands;
 using Discord.WebSocket;
 using Dovebot.Services;
+using Dovebot.Services.Jobs;
 using Microsoft.Extensions.DependencyInjection;
+using NCrontab;
+using Quartz;
+using Quartz.Impl;
 
 namespace Dovebot
 {
@@ -31,10 +35,13 @@ namespace Dovebot
 
                 await services.GetRequiredService<CommandHandlerService>().InitializeAsync();
             
+                JobService jobService = new JobService();
+                await jobService.StartJob(); 
+                
                 await Task.Delay(Timeout.Infinite);   
             }
         }
-
+        
         private ServiceProvider ConfigureServices()
         {
             return new ServiceCollection()
@@ -43,6 +50,7 @@ namespace Dovebot
                 .AddSingleton<CommandHandlerService>()
                 .AddSingleton<HttpClient>()
                 .AddSingleton<PictureService>()
+                .AddSingleton<JobService>()
                 .AddSingleton<UpcomingmatchService>()
                 .BuildServiceProvider();
         }

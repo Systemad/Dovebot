@@ -1,13 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.IO.Compression;
 using System.Linq;
-using System.Reflection;
 using System.Threading.Tasks;
-using Discord;
 using Discord.Commands;
-using Discord.Rest;
-using Discord.WebSocket;
 using HLTVnet.Models;
 using HLTVnet.Parsing;
 
@@ -15,6 +10,9 @@ namespace Dovebot.Modules.General
 {
     public class ChannelHandler : ModuleBase
     {
+        private List<UpcomingMatch> _upcomingMatches = new();
+        
+        private List<UpcomingMatch> _pastUpcomingMatches = new();
         
         [Command("createchannel")]
         public async Task CreateRoom(string channelname)
@@ -35,10 +33,14 @@ namespace Dovebot.Modules.General
             await ReplyAsync($"{channelname} created");
         }
         
-        [Command("creatematch")]
-        [RequireUserPermission(GuildPermission.ManageChannels)]
-        public async Task CreateMatchRoom(UpcomingMatch upcomingMatch)
+        //[Command("creatematch")]
+        //[RequireUserPermission(GuildPermission.ManageChannels)]
+        /*
+        public async Task CreateMatchRoom()
         {
+
+            _upcomingMatches = await HLTVParser.GetUpcomingMatches();
+            
             var guild = Context.Guild;
             var catagories = await guild.GetCategoriesAsync();
             var targetCatagory = catagories.FirstOrDefault(x => x.Name == "Matches");
@@ -52,5 +54,6 @@ namespace Dovebot.Modules.General
                 x.Topic = $"{upcomingMatch.Team1.Name} vs {upcomingMatch.Team2.Name} at {upcomingMatch.Event.Name}";
             });
         }
+        */
     }
 }

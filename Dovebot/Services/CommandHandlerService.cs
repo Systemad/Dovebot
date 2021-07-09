@@ -4,6 +4,7 @@ using System.Threading.Tasks;
 using Discord;
 using Discord.Commands;
 using Discord.WebSocket;
+using HLTVnet.Models;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace Dovebot.Services
